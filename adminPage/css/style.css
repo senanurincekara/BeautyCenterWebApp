@@ -1,0 +1,346 @@
+/* Container for sidebar and topbar */
+.container {
+   display: flex;
+   z-index: 1000;
+}
+body{
+   background-color: #f1e3f7;
+}
+
+/* The side navigation menu */
+.sidebar {
+   margin: 0;
+   width: 200px;
+   background: rgba(255, 255, 255, .2);
+   border-radius: 25px;
+   backdrop-filter: blur(10px);
+   border: 5px solid #fff;
+   box-shadow: 0 0 5px rgba(206, 51, 144, 0.1),
+       0 0 10px rgba(0, 0, 0, .2),
+       0 0 15px rgba(125, 38, 141, 0.2);
+   padding: 20px;
+   position: fixed;
+   height: 100%;
+   overflow: auto;
+   z-index: 1000;
+}
+
+/* box-shadow: 0 0 5px rgba(126, 38, 91, 0.1),
+       0 0 10px rgba(0, 0, 0, .2),
+       0 0 15px rgba(0, 0, 0, .2); */
+
+.sidebar h2 {
+   font-size: 1.2em;
+   font-weight: bold;
+   cursor: pointer;
+   color: #000;
+   text-decoration: double;
+   text-align: center;
+}
+
+/* Sidebar links */
+.sidebar a {
+   display: block;
+   color: black;
+   padding: 16px;
+   text-decoration: none;
+}
+
+/* Active/current link */
+.sidebar a.active {
+   background-color: #f2dffa;
+   border-radius: 25px;
+   text-decoration-color: black;
+   color: black;
+   font-weight: bold;
+   border: 2px solid #000000a0 /* Kenarlık eklenen satır */
+
+}
+
+/* Links on mouse-over */
+.sidebar a:hover:not(.active) {
+   background-color: #e2bcf8;
+   border-radius: 25px;
+   color: white;
+}
+
+/* Topbar styles */
+.top {
+   width: 100%;
+   height: 40px;
+   margin-left: 270px;
+   background: rgba(255, 255, 255, .2);
+   border-radius: 25px;
+   backdrop-filter: blur(10px);
+   border: 5px solid #fff;
+   box-shadow: 0 0 5px rgba(0, 0, 0, .1),
+       0 0 10px rgba(0, 0, 0, .2),
+       0 0 15px rgba(0, 0, 0, .2);
+   padding: 20px;
+   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Page content */
+div.content {
+   flex: 1 1 40%;
+   padding-left: 2rem;
+   margin-left: 270px;
+ /* Adjust the margin-left to match the width of the sidebar */
+   padding: 1px 16px;
+   height: 1000px;
+}
+
+div.content h1 {
+   padding: .5rem 0;
+   padding-top: 1rem;
+   line-height: 1.5;
+}
+
+
+
+
+/* contact */
+/* Content tasarımı */
+/* Tablo içindeki thead stilleri */
+
+/* Content tasarımı */
+.content {
+   flex: 1;
+   padding: 20px;
+}
+
+.content h1 {
+   font-size: 2em;
+   color: #333;
+}
+
+.content h2 {
+   font-size: 1.5em;
+   color: #555;
+   margin-bottom: 20px;
+}
+
+
+
+.content .card-header h4{
+   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+   font-weight: bold;
+   font-size: large;
+}
+
+
+.content .card-header .btn1{
+   background-color: #80ed84; /* Yeşil arka plan */
+   border: 1px solid #143a15; /* Yeşil kenarlık */
+   border-radius: 20px;
+   color: #9e3690; /* Beyaz yazı rengi */
+   font-weight: bolder; /* Kalın yazı tipi */
+   padding: 10px 30px;
+   text-decoration: none;
+   display: inline-block; /* Butonu blok içinde hizala */
+}
+
+
+.content table {
+   border-spacing: 10px; /* Tablo ve tbody arasındaki mesafe */
+   border-collapse: separate; /* Hücreler arasındaki mesafeyi belirtir */
+   width: 100%; /* Tablonun genişliğini ayarlar */
+}
+
+/* Tablo başlığı stil */
+.content table thead th {
+   background-color: #daabd4; /* Pembe arka plan */
+   border: 1px solid #ff6969; /* Pembe kenarlık */
+   border-radius: 20px;
+   backdrop-filter: blur(10px);  
+   box-shadow: 0 0 5px rgba(0, 0, 0, .1),
+   0 0 10px rgba(0, 0, 0, .2),
+   0 0 15px rgba(0, 0, 0, .2);
+   padding: 15px; /* İçeriğin etrafına 15px boşluk ekleyin */
+   margin-bottom: 50px; /* Alt kısmına 50px mesafe ekleyin */
+   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+   font-weight: bold;
+   font-size: large;
+
+
+}
+
+/* Tablo içindeki tbody stil */
+.content table .tbody {
+   background-color: #d868c9; /* Pembe arka plan */
+   border: 1px solid #e03d8f; /* Pembe kenarlık */
+   border-radius: 20px;
+   /* backdrop-filter: blur(10px);   */
+   padding: 50px; /* İçeriğin etrafına 15px boşluk ekleyin */
+   margin-bottom: 50px; /* Alt kısmına 50px mesafe ekleyin */
+
+}
+
+.content table tbody tr {
+
+   border-radius: 20px;
+   backdrop-filter: blur(10px);  
+   box-shadow: 0 0 5px rgba(0, 0, 0, .1),
+   0 0 10px rgba(0, 0, 0, .2),
+   0 0 15px rgba(0, 0, 0, .2);
+   margin-bottom: 15px; /* Alt kısmına 15px mesafe ekleyin */
+}
+
+
+.content table tbody tr td {
+   padding: 15px; /* İçeriğin etrafına 15px boşluk ekleyin */
+   text-align: center; /* Hücre içindeki içeriği ortala */
+   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+   font-weight: lighter;
+   font-size: large;
+
+}
+
+/* Güncelle butonu stil */
+.content table tbody tr td .btn-success {
+   background-color: #80ed84; /* Yeşil arka plan */
+   border: 1px solid #143a15; /* Yeşil kenarlık */
+   border-radius: 20px;
+   color: #9e3690; /* Beyaz yazı rengi */
+   font-weight: bolder; /* Kalın yazı tipi */
+   padding: 10px 20px;
+
+   text-decoration: none;
+   display: inline-block; /* Butonu blok içinde hizala */
+
+}
+
+/* Güncelle butonu stil */
+
+.content table tbody tr td .btn-danger {
+   display: inline-block; /* Display as inline-block to make them appear on the same line */
+   margin-right: 10px; /* Add some margin between the buttons for spacing */
+   background-color: #f31c1c; /* Yeşil arka plan */
+   border: 1px solid #a20404; /* Yeşil kenarlık */
+   border-radius: 20px;
+   color: #ece4eb; /* Beyaz yazı rengi */
+   font-weight: bolder; /* Kalın yazı tipi */
+   font-size: medium;
+   padding: 10px 20px;
+   text-decoration: none;
+}
+
+
+
+/* Hover efekti ekleyerek butonun rengini değiştirme */
+.content table tbody tr td .btn-success:hover {
+   background-color: #45a049; /* Daha koyu yeşil arka plan */
+   border: 1px solid #45a049; /* Daha koyu yeşil kenarlık */
+}
+
+
+.content table tbody tr td.action-column {
+   text-align: center;
+}
+
+.contact{
+   flex: 1;
+   padding: 5px;
+   margin-left: 270px;
+}
+
+.contact .row{
+   display: flex;
+   flex-wrap: wrap;
+   gap: 1.5rem;
+   align-items: center;
+}
+.contact .row form{
+   flex: 1 1 40rem;
+   padding:2rem 2.5rem ;
+   box-shadow: 0.5rem 1.5rem rgba(0, 0 , 0 , .1);
+   border: .1rem solid rgba(0, 0 , 0 , .1);
+   background: #fff;
+   border-radius: .5rem;
+
+}
+.contact .row .image{
+   flex: 1 1 40rem;
+}
+
+.contact .row .image img{
+   flex: 1 1 40rem;
+
+}
+
+.contact .row form .box,
+.contact .row #hizmet{
+   padding: 1rem;
+   font-size: 1.7rem;
+   color: #333;
+   text-transform: none;
+   border: .1rem solid rgba(0, 0 , 0 , .1);
+   border-radius: .5rem;
+   margin: .7rem 0;
+   width: 100%;
+
+   box-sizing: border-box; /* Include padding and border in the element's total width and height */
+
+
+}
+
+
+
+.contact .row form .box:focus,
+.contact .row #hizmet:focus{
+   border-color: var(--pink);
+
+
+}
+
+.contact .row form textarea{
+   height: 15rem;
+   resize: none;
+   
+
+}
+
+
+
+
+
+
+
+
+
+
+/* On screens that are less than 400px, display the bar vertically, instead of horizontally */
+@media screen and (max-width: 400px) {
+   .sidebar a {
+       text-align: center;
+       float: none;
+   }
+}
+
+
+
+
+
+
+
+/* On screens that are less than 700px wide, make the sidebar into a topbar */
+@media screen and (max-width: 700px) {
+   .sidebar {
+       width: 100%;
+       height: auto;
+       position: relative;
+   }
+   .sidebar a {
+       float: left;
+   }
+   .top {
+       margin-left: 0;
+       width: 100%;
+   }
+   div.content {
+       margin-left: 0;
+   }
+}
+
+
+
